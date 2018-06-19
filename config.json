@@ -1,0 +1,41 @@
+{
+    "env": "development",
+    "dev": {
+        "minifyHtml": false,
+        "minifyJs": false,
+        "minifyCss": false
+    },
+    "prod": {
+        "minifyHtml": true,
+        "minifyJs": true,
+        "minifyCss": true
+    },
+    "autoprefixer": {
+        "browsers": ["last 2 versions", "> 2%"]
+    },
+    "sass": {
+        "outputStyle": "nested",
+        "imagePath": "images/",
+        "precision": 3,
+        "errLogToConsole": true
+    },
+    "imagemin": {
+        "optimizationLevel": 5
+    },
+    "folder": {
+        "src": "src/",
+        "build": "build/"
+    },
+    "browserSync": {
+        "host": "gulp-workflow.test",
+        "open": "external",
+        "server": {
+            "baseDir": "build/"
+        },
+        "port": 80,
+        "browser": ["google chrome"]
+    },
+    "babel": {
+        "presets": ["es2015"]
+    }
+}

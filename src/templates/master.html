@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" bullshit="123">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %}src/templates/master.html{% endblock %}</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="center">
+            {% block content %}
+                <img src="images/gulp.jpeg" alt="Gulp">
+            {% endblock %}
+        </div>
+        {% include "includes/footer.html" ignore missing %}
+    </div>
+
+    <script src="js/libs/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
